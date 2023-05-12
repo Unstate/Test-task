@@ -1,20 +1,21 @@
 .cardContainer {
     @apply p-[20px] flex flex-col space-y-[20px] border-[2px] border-cyan-500;
 
-    .cardName {
+    /* .cardName {
         @apply flex justify-center
-    }
+    } */
 
     .infoContainer {
-        @apply flex justify-between pr-[30px] pt-[10px];
+        @apply flex justify-between ;
     
-        .likeContainer {
-            @apply flex space-x-[20px];
 
             .liked {
                 @apply bg-cyan-500 rounded-2xl
             }
-        }
+    }
+
+    .buttonContainer {
+        @apply flex items-center space-x-[20px];
     }
 }
 

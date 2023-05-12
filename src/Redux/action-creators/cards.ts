@@ -6,7 +6,7 @@ export const fetchCards = () => {
     return async (dispatch: Dispatch<CardAction>) => {
         try {
             dispatch({type: CardActionTypes.FETCH_CARDS})
-            const response = await axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
+            const response = await axios.get('https://jsonplaceholder.typicode.com/photos?_limit=10')
             setTimeout(()=>{
                 dispatch({type: CardActionTypes.FETCH_CARDS_SUCCESS, payload: response.data})
             },500)

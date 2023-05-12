@@ -1,7 +1,18 @@
+import { Item } from "../Card/Card.props";
+
+type Card = {
+    albumId: number;
+    id: number;
+    title: string;
+    url: string;
+    thumbnailUrl: string;
+    completed: boolean;
+}
+
 export interface CardState {
-    cards: any[];
+    cards: Card[];
     loading: boolean;
-    error: null | string; 
+    error: null | string;  
 }
 
 export enum CardActionTypes {

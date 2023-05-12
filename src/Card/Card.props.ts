@@ -1,8 +1,10 @@
 export interface Item {
-    userId: number;
+    albumId: number;
     id: number;
     title: string;
-    completed: boolean;
+    url: string;
+    thumbnailUrl: string;
+    completed?: boolean;
 }
 
 export interface CardProps {

@@ -14,8 +14,8 @@ const Cards: React.FC = () => {
         fetchCards()
     },[])
 
-    const filteredCards = cards
-    ? cards.filter((card) => card.completed)
+    const filteredCards = cards 
+    ? cards.filter((card) => card.albumId % 2 == 0)
     : cards;
     
     const [showLiked, setShowLiked] = useState(false)

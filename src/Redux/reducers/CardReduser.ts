@@ -26,7 +26,7 @@ export const cardReduser = (state = initialState,action:CardAction):CardState =>
         case CardActionTypes.LIKE_CARD:
             return {
                 ...state,
-                cards: state.cards.map(card => card.id === action.payload ? {...card, completed: !card.completed} : card)
+                cards: state.cards.map(card => card.id === action.payload ? {...card, albumId: card.albumId + 1} : card)
             }   
         default: 
             return state
